@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#262828"
+
+    tools:context=".CreationActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="147dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="32dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailEt"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_champs_login"
+        android:drawableStart="@drawable/icone_email"
+        android:drawablePadding="10dp"
+        android:hint=" Entrer un email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#93CDDB"
+        android:textColorHint="#8F8F8F"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/NumeroCompteur"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_champs_login"
+        android:drawableLeft="@drawable/icone_compteur"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint=" Entrer le numéro Compteur"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#93CDDB"
+        android:textColorHint="#8F8F8F"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEt" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passEt"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/emailEt"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_champs_login"
+        android:drawableLeft="@drawable/icone_mdp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint=" Entrer un mot de passe"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#93CDDB"
+        android:textColorHint="#8F8F8F"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NumeroCompteur" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/confirmPassEt"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_champs_login"
+        android:drawableLeft="@drawable/icone_mdp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint=" Confirmer le mot de passe"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#93CDDB"
+        android:textColorHint="#8F8F8F"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passEt" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="135dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_boutton"
+        android:text="inscription"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPassEt" />
+
+    <TextView
+        android:id="@+id/connect"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Se connecter ?"
+        android:textColor="#FFF800"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

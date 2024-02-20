@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SAVEE</string>
+    <string name="play">play</string>
+    <string name="ble_device_connected">ble_connected</string>
+    <string name="ble_device_status_connecting">ble_connecting</string>
+    <string name="ble_device_disconnected">ble_disconnected</string>
+    <string name="ble_device_status_disconnecting">ble_disconnecting</string>
+    <string name="ble_scan_pause">ble_scan_pause</string>
+    <string name="ble_scan_play">ble_scan_play</string>
+    <string name="ble_scan_error">ble_scan_error</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
